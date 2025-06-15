@@ -1,6 +1,6 @@
 const TelegramBot = require("node-telegram-bot-api");
 const mongoose = require("mongoose");
-const { generateUnbanMessage } = require("./gemini");
+import { generateUnbanMessage } from "./gemini.mjs";
 const { sendEmail } = require("./mailer");
 const Request = require("./models/Request");
 require("dotenv").config();
